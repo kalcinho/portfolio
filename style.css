@@ -1,0 +1,130 @@
+/* General Styles */
+body, html {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2a2a2a, #000);
+    color: white;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.animated-text {
+    font-size: 3rem;
+    animation: float 3s ease-in-out infinite; /* Add the floating animation */
+}
+
+/* Highlight Text Style */
+.highlight-text {
+    color: #f95959; /* Apply the specific color */
+}
+
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* Starting and ending at the original position */
+    }
+    50% {
+        transform: translateY(-10px); /* Moves up slightly */
+    }
+}
+
+.sub-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.contact-button {
+    background-color: #f95959;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #d04747;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Dark transparent background */
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.modal-content {
+    background: #333; /* Dark modal background */
+    color: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+.modal-content h2 {
+    margin-bottom: 15px;
+}
+
+.modal-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.modal-content ul li {
+    margin: 10px 0;
+}
+
+.modal-content a {
+    color: #f95959;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.modal-content a:hover {
+    text-decoration: underline;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Modal Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
